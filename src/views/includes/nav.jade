@@ -1,0 +1,35 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .container
+      a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.brand(href='/thesAss')
+        | sAssQuash
+      .nav-collapse
+        ul.nav
+          li.divider-vertical
+          li
+            a(href='/') 
+              i.icon-home.icon-white
+              | Home
+          li.divider-vertical
+          li
+            a(href='/blog')
+              i.icon-book.icon-white
+              | Blog
+          li.divider-vertical
+
+        .pull-right
+          ul.nav.pull-right
+            li.dropdown
+              a.dropdown-toggle(data-toggle='dropdown', href='#Admin')
+                i.icon-cog.icon-white
+                | Admin
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='/logIn')
+                    i.icon-share
+                    | Log In

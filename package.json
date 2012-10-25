@@ -1,7 +1,12 @@
 {
   "name": "codeNblog",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "author": "mrBahtou",
+  "engine": {
+    "node": "0.8.11",
+    "npm": "1.1.63"
+  }
   "scripts": {
     "start": "node src/app"
   },

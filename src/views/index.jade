@@ -1,5 +1,15 @@
 extends layout
 
+append stylesheets
+  style
+    .intro {
+      float: left;
+      width: 100%;
+      margin: 40px;
+    }
+
 block content
-  h1= title
-  p Welcome to #{title}
+  .intro
+    h1= title
+    p Welcome to my blog
+    p Don't know what should be displayed here

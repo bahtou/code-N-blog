@@ -1,7 +1,6 @@
-doctype 5
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+!!! 5
+html(lang='en')
+  include ./includes/head
   body
-    block content
+  include ./includes/nav
+  block content 

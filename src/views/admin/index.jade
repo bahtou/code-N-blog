@@ -1,0 +1,78 @@
+extends ../layout
+
+append stylesheets
+  style
+    .login-wrapper {
+      margin: 4% 10% 0;
+      max-width: 1100px;
+      min-width: 780px;
+      //- border: 1px solid white;
+    }
+    .span7 {
+      margin: 4% 0;
+      background-color: #BDB76B;
+      //- border: 1px solid white;
+    }
+    #funStuff {
+      margin:4%;
+    }
+    .well {
+      width: 100%;
+      padding: 0;
+      margin-top: 10%;
+      border: 1px solid #0D0D0D;
+      background-color: #0D0D0D;
+
+        lack;
+    }
+    .sign-in {
+      margin: 2%;
+      padding: 2% 2% .8% 2%;
+      background-color: #BDB76B;
+    }
+    //- legend, label, #username, #password, button {
+    //-   margin-left: 2%;
+    //- }
+    #username,  #password {
+      width: 95%;
+    }
+
+block content
+  .login-wrapper
+    .row-fluid
+      .span7
+        section#funStuff
+          header
+            h1 Fun Stuff
+            h2 I have to put fun stuff here
+          p WTF reddit!
+          ul.stuff
+            li
+              i.icon-envelope.icon-white
+              p what what inYo butt?
+              p say whaa?
+            li
+              i.icon-list-alt.icon-white
+              p what todo list?
+              p ... yumYum maos!
+            li
+              i.icon-comment.icon-white
+              p hit me up YO!
+      .span4
+        .well
+          .sign-in
+            legend Sign in
+            form(method='POST', action='', accept-charset='UTF-8')
+              .alert.alert-error
+                a.close(data-dismiss='alert', href='#') x
+                | Incorrect Username or Password!
+              
+              label(for='username') Username
+              input#username.span3(placeholder='Username', type='email', name='username')
+              label(for='password') Password
+              input#password.span3(placeholder='Password', type='password', name='password')
+              
+              label.checkbox
+                input(type='checkbox', name='remember', value='1')
+                | Remember Me
+              button.btn-info.btn(type='submit') Login
